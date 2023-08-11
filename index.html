@@ -11,8 +11,86 @@
 </head>
 <body>
     <h1>Biri Code Camp</h1>
-    <p>Thank you for helping us to improve the platform!</p>
-    <section>
+    <p>Obrigado por ajudar na plataforma!</p>
+    <form action="form.java" method="post" autocomplete="on">
+        <div>
+            <label for="inome"><i class="fa-solid fa-user"></i> Nome:</label>
+            <input type="text" name="nome" id="inome" class="txt" autocomplete="name" required>
+        </div>
+        <div>
+            <label for="iemail"><i class="fa-solid fa-envelope"></i> E-mail:</label>
+            <input type="email" name="email" id="iemail" class="txt" autocomplete="email" required>
+        </div>
+        <div>
+            <label for="iidade"><i class="fa-sharp fa-solid fa-circle-half-stroke"></i> Idade:</label>
+            <input type="number" name="idade" id="iidade" class="age" placeholder="(Opcional)">
+        </div>
+        <div>
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label>
+                <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
+            </fieldset>
+        </div>
+        <div>
+            <p>Qual opção melhor descreve sua profissão atual?</p>
+            <label for="iprofissao"></label>
+            <select name="profissao" id="iprofissao">
+                <option value="estudante">Estudante</option>
+                <option value="clt">CLT Integral</option>
+                <option value="estagio">Estágio</option>´
+                <option value="meiop">Meio-período</option>
+                <option value="contrato">Contrato temporário</option>
+                <option value="outro" selected>Outro</option>
+            </select>
+        </div>
+        <div>
+            <p>Qual seu recurso favorito da Biri Code Camp?</p>
+            <label for="irecurso"></label>
+            <select name="recurso" id="irecurso">
+                <option value="desafios">Desafios</option>
+                <option value="projetos">Projetos</option>
+                <option value="comunidade">Comunidade</option>
+                <option value="outro" selected>Outro</option>
+            </select>
+        </div>        
+        <div>
+            <fieldset>
+                <legend>Você recomendaria Biri Code Camp para outras pessoas?</legend>
+                <input type="radio" name="alternativa" id="isim" value="S"> <label for="isim">Sim</label>
+                <br>
+                <input type="radio" name="alternativa" id="inao" value="N"> <label for="inao">Não</label>
+                <br>
+                <input type="radio" name="alternativa" id="italvez" value="T"> <label for="italvez">Talvez</label>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>O que você gostaria de ver melhorar?</legend>
+                <input type="checkbox" name="frontend" id="ifrontend"> Projetos Front-End
+                <br>
+                <input type="checkbox" name="backend" id="ibackend"> Projetos Back-End
+                <br>
+                <input type="checkbox" name="bancodados" id="ibancodados"> Projetos Banco de Dados
+                <br>
+                <input type="checkbox" name="desafios" id="idesafios"> Desafios
+                <br>
+                <input type="checkbox" name="forum" id="iforum"> Fórum
+                <br>
+                <input type="checkbox" name="comunidade" id="icomunidade"> Comunidade
+            </fieldset>
+        </div>
+        <div>
+            <label for="imsg">Comentários ou sugestões adicionais?</label> <br>
+            <textarea name="msg" id="imsg" cols="70" rows="5" placeholder="Digite aqui..."></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar" id="btn">
+            <input type="reset" value="Limpar" id="btn2">
+        </div>
+    </form>
+    <!--
+     <section>
         <div>
             <p><i class="fa-solid fa-user"></i>Name</p>
             <input type="text" class="txt" placeholder="Enter your name">
@@ -76,6 +154,7 @@
         <div>
             <input type="button" value="Submit" id="btn">
         </div>
-    </section>
+    </section>   
+    --> 
 </body>
 </html>
