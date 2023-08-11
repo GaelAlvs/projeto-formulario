@@ -70,18 +70,6 @@ select {
     width: 390px;
 }
 
-.check {
-    padding-left: 10px;
-}
-
-#comment {
-    height: 180px;
-    border-radius: 5px;
-    border: 5px;
-    display: flex;
-    flex-direction: column;
-}
-
 #btn {
     width: 620px;
     height: 50px;
